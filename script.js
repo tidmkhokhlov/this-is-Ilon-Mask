@@ -20,7 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-theme');
-        themeToggle.textContent = 'Светлая тема';
+        if (themeToggle) {
+            themeToggle.textContent = 'Светлая тема';
+        }
     }
 });
 
