@@ -384,9 +384,15 @@ html, body { height: 100%; }
 body {
   color: var(--text);
   background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container { width: min(1100px, 92%); margin: 0 auto; }
+
+/* Sticky footer layout: let main grow to fill space */
+main { flex: 1 0 auto; }
 
 /* Header */
 .site-header { position: sticky; top: 0; backdrop-filter: blur(6px); background: color-mix(in oklab, var(--bg) 85%, transparent); border-bottom: 1px solid var(--border); z-index: 100; }
@@ -401,7 +407,7 @@ body {
 .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
 .btn.primary { background: var(--primary); color: #fff; border-color: transparent; }
 
-/* Hero tweaks for new theme (non-breaking) */
+
 .hero .subtitle { color: var(--muted); }
 
 /* Sections */
