@@ -148,13 +148,17 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.intro, .highlights, .quick-facts {
-    margin-bottom: 3rem;
+.intro, .highlights, .quick-facts, .timeline-event, .company-card, .fact-item, .education_list {
+    margin-top: 3rem;
     padding: 2rem;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
+}
+
+.timeline-event:last-child {
+    margin-bottom: 3rem;
 }
 
 .dark-theme .intro,
